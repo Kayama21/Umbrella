@@ -1,17 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <penjumlahan/>
+    <pengurangan/>
+    <perkalian/>
+    <pembagian/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Penjumlahan from './components/Penjumlahan.vue'
+import Pengurangan from './components/Pengurangan.vue'
+import Perkalian from './components/Perkalian.vue'
+import Pembagian from './components/Pembagian.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Penjumlahan,
+    Pengurangan,
+    Perkalian,
+    Pembagian
   },
   data () {
     return ({
